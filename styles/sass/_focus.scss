@@ -1,0 +1,13 @@
+.today-focus {
+    width: 100%;
+    height: calc(100vh * 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+
+    .focus {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+}

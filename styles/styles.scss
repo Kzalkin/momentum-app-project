@@ -1,0 +1,12 @@
+@use 'sass/main';
+@use 'sass/header';
+@use 'sass/time-greeting';
+@use 'sass/footer';
+@use 'sass/focus';
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}

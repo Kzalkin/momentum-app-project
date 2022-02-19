@@ -1,0 +1,17 @@
+.time-greeting {
+    width: 100%;
+    height: calc(100vh * 0.60);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+
+    .clock-time {
+        font-size: 10rem;
+    }
+
+    .greeting {
+        font-size: 2rem;
+    }
+}
