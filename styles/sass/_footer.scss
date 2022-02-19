@@ -1,7 +1,65 @@
 .footer {
     width: 100%;
+    padding: 0 5px 5px 5px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     bottom: 0;
+
+    .reset {
+        padding: 0.5rem;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        border-radius: 15px;
+        &:hover {
+            background-color: hsl(0, 0%, 80%);
+        }
+    }
+
+    .todo-btn {
+        padding: 0.5rem;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        border-radius: 15px;
+        &:hover {
+            background-color: hsl(0, 0%, 80%);
+        }
+    }
+
+    .add-quote-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -15px;
+        padding: 10px;
+        position: absolute;
+        align-items: center;
+        bottom: 50px;
+        left: 42.7vw;
+        background-color: hsl(0, 0%, 80%);
+        border-radius: 15px;
+
+        .add-quote-input {
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        .reset-quotes {
+            margin: 0.5rem;
+            width: 7rem;
+            padding: 0.5rem;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            background-color: white;
+            &:hover{
+                background-color: hsl(0, 0%, 70%);
+            }
+        }
+    }
+}
+
+.hide {
+    display: none !important;
 }

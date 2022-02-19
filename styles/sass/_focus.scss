@@ -8,6 +8,17 @@
 
     .focus {
         font-size: 1.5rem;
-        padding: 0.5rem;
+        width: 19.5rem;
+        padding: 0 1rem;
+        margin-top: 1rem;
+        &::placeholder {
+            color: black;
+        }
+    }
+
+    .focus-display {
+        display: none;
+        font-size: 2rem;
+        margin-top: 1rem;
     }
 }

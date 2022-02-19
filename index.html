@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts/app.js" defer></script>
+    <script src="scripts/clock.js" defer></script>
+    <script src="scripts/greeting.js" defer></script>
+    <script src="scripts/focus.js" defer></script>
+    <script src="scripts/randomQuotes.js" defer></script>
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Document</title>
+    <title>Momentum App</title>
 </head>
 <body>
     <main class="app-container">
@@ -15,17 +18,31 @@
             <span>weather</span>
         </header>
         <div class="time-greeting">
-            <span class="clock-time">7:00</span>
-            <span class="greeting">Good Something, Someone!</span>
+            <span class="clock-time"></span>
+            <span class="greeting"></span>
+            <form action="" class="form">
+                <input type="text" class="input" placeholder="What's your name?">
+            </form>
         </div>
         <div class="today-focus">
             <span>TODAY</span>
-            <span class="focus">Something something something</span>
+            <span class="focus-display"></span>
+            <form action="" class="task-form">
+                <input type="text" class="focus" placeholder="What is your focus today?">
+            </form>
         </div>
         <footer class="footer">
-            <span>something</span>
-            <span class="quotes">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-            <span>something</span>
+            <button class="reset">Reset User</button>
+            <div>
+                <div class="add-quote-container hide">
+                    <form action="" class="add-quote-form">
+                        <input type="text" class="add-quote-input" placeholder="Add your quotes!" required>
+                    </form>
+                    <button class="reset-quotes">Reset Quotes</button>
+                </div>
+                <span class="quotes"></span>
+            </div>
+            <button class="todo-btn">To-Do List</button>
         </footer>
     </main>
 </body>

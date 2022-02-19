@@ -14,4 +14,16 @@
     .greeting {
         font-size: 2rem;
     }
+
+    .input {
+        font-size: 1rem;
+        padding: 0 0.7rem;
+        width: 10rem;
+        margin-top: 1rem;
+
+        &::placeholder {
+            color: black;
+            font-size: 1rem;
+        }
+    }
 }

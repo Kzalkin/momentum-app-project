@@ -30,13 +30,76 @@
 .time-greeting .greeting {
   font-size: 2rem;
 }
+.time-greeting .input {
+  font-size: 1rem;
+  padding: 0 0.7rem;
+  width: 10rem;
+  margin-top: 1rem;
+}
+.time-greeting .input::placeholder {
+  color: black;
+  font-size: 1rem;
+}
 
 .footer {
   width: 100%;
+  padding: 0 5px 5px 5px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   bottom: 0;
+}
+.footer .reset {
+  padding: 0.5rem;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  border-radius: 15px;
+}
+.footer .reset:hover {
+  background-color: #cccccc;
+}
+.footer .todo-btn {
+  padding: 0.5rem;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  border-radius: 15px;
+}
+.footer .todo-btn:hover {
+  background-color: #cccccc;
+}
+.footer .add-quote-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -15px;
+  padding: 10px;
+  position: absolute;
+  align-items: center;
+  bottom: 50px;
+  left: 42.7vw;
+  background-color: #cccccc;
+  border-radius: 15px;
+}
+.footer .add-quote-container .add-quote-input {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.footer .add-quote-container .reset-quotes {
+  margin: 0.5rem;
+  width: 7rem;
+  padding: 0.5rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+.footer .add-quote-container .reset-quotes:hover {
+  background-color: #b3b3b3;
+}
+
+.hide {
+  display: none !important;
 }
 
 .today-focus {
@@ -49,7 +112,17 @@
 }
 .today-focus .focus {
   font-size: 1.5rem;
-  padding: 0.5rem;
+  width: 19.5rem;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+.today-focus .focus::placeholder {
+  color: black;
+}
+.today-focus .focus-display {
+  display: none;
+  font-size: 2rem;
+  margin-top: 1rem;
 }
 
 * {
