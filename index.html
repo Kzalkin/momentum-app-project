@@ -8,15 +8,19 @@
     <script src="scripts/greeting.js" defer></script>
     <script src="scripts/focus.js" defer></script>
     <script src="scripts/randomQuotes.js" defer></script>
+    <script src="scripts/todo.js" defer></script>
+    <script src="https://kit.fontawesome.com/5950edb350.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/styles.css">
     <title>Momentum App</title>
 </head>
 <body>
     <main class="app-container">
+
         <header class="header">
             <span class="app-links">Apps</span>
             <span>weather</span>
         </header>
+
         <div class="time-greeting">
             <span class="clock-time"></span>
             <span class="greeting"></span>
@@ -24,6 +28,7 @@
                 <input type="text" class="input" placeholder="What's your name?">
             </form>
         </div>
+
         <div class="today-focus">
             <span>TODAY</span>
             <span class="focus-display"></span>
@@ -31,19 +36,37 @@
                 <input type="text" class="focus" placeholder="What is your focus today?">
             </form>
         </div>
+
         <footer class="footer">
+
             <button class="reset">Reset User</button>
             <div>
+
                 <div class="add-quote-container hide">
+
                     <form action="" class="add-quote-form">
                         <input type="text" class="add-quote-input" placeholder="Add your quotes!" required>
                     </form>
                     <button class="reset-quotes">Reset Quotes</button>
+
                 </div>
                 <span class="quotes"></span>
+
             </div>
-            <button class="todo-btn">To-Do List</button>
+            <div>
+                <div class="todo-container hide1">
+                    <p>To-Do List</p>
+                    <div class="todo-list-container"></div>
+                    <form action="" class="todo-form">
+                        <input type="text" class="todo-input" placeholder="Add To-Do" required>
+                    </form>
+                </div>
+                <button class="todo-btn">To-Do List</button>
+                
+            </div>
+
         </footer>
+
     </main>
 </body>
 </html>

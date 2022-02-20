@@ -43,7 +43,7 @@
 
 .footer {
   width: 100%;
-  padding: 0 5px 5px 5px;
+  padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,6 +58,10 @@
 }
 .footer .reset:hover {
   background-color: #cccccc;
+  cursor: pointer;
+}
+.footer .reset:active {
+  background-color: #e6e6e6;
 }
 .footer .todo-btn {
   padding: 0.5rem;
@@ -67,18 +71,26 @@
 }
 .footer .todo-btn:hover {
   background-color: #cccccc;
+  cursor: pointer;
+}
+.footer .todo-btn:active {
+  background-color: #e6e6e6;
 }
 .footer .add-quote-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: -15px;
-  padding: 10px;
+  height: 8rem;
+  width: 15rem;
+  margin-bottom: -10px;
   position: absolute;
   align-items: center;
+  justify-content: center;
   bottom: 50px;
   left: 42.7vw;
   background-color: #cccccc;
   border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 .footer .add-quote-container .add-quote-input {
   margin: 0.5rem;
@@ -96,10 +108,78 @@
 }
 .footer .add-quote-container .reset-quotes:hover {
   background-color: #b3b3b3;
+  cursor: pointer;
+}
+.footer .add-quote-container .reset-quotes:active {
+  background-color: #cccccc;
+}
+.footer .quotes {
+  padding: 0.5rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+.footer .quotes:hover {
+  background-color: #cccccc;
+  cursor: pointer;
+}
+.footer .quotes:active {
+  background-color: #e6e6e6;
+}
+.footer .todo-container {
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #cccccc;
+  position: absolute;
+  bottom: 50px;
+  right: 1rem;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.footer .todo-container p {
+  padding: 0.5rem;
+}
+.footer .todo-container .todo-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: white;
+  overflow: auto;
+}
+.footer .todo-container .todo-list-container .todo-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .todo-container .todo-list-container .todo-list p {
+  margin: 0;
+  padding: 5px;
+  cursor: pointer;
+}
+.footer .todo-container .todo-list-container .todo-list i {
+  cursor: pointer;
+}
+.footer .todo-container .todo-form {
+  padding: 1rem;
+}
+.footer .todo-container .todo-form .todo-input {
+  padding: 0.5rem;
+  border-radius: 15px;
 }
 
 .hide {
-  display: none !important;
+  height: 0 !important;
+}
+
+.hide1 {
+  height: 0 !important;
+  width: 0 !important;
 }
 
 .today-focus {
