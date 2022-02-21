@@ -1,5 +1,5 @@
 const timeDisplay = document.querySelector('.clock-time');
-let isFormat = true;
+let isFormat = false;
 
 timeDisplay.addEventListener('click', () => {
     if (isFormat) {
