@@ -47,7 +47,6 @@ function saveFormat(x) {
 }
 
 
-
 function getFormat() {
     if (format === "true") {
         displayTime();
