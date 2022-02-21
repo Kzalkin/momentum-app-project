@@ -1,11 +1,18 @@
 const timeDisplay = document.querySelector('.clock-time');
-let isFormat = false;
+const isFormat = "false";
+
+let format = localStorage.getItem("format");
+
+if (format === null) {
+    localStorage.setItem("format", isFormat);
+    format = localStorage.getItem("format");
+}
 
 timeDisplay.addEventListener('click', () => {
-    if (isFormat) {
-        isFormat = false;
-    } else if (isFormat === false) {
-        isFormat = true;
+    if (format === "true") {
+        format = "false";
+    } else if (format === "false") {
+        format = "true";
     }
 })
 
@@ -35,11 +42,19 @@ function displayOtherTime() {
     }
 }
 
+function saveFormat(x) {
+    localStorage.setItem("format", x)
+}
+
+
+
 function getFormat() {
-    if (isFormat) {
+    if (format === "true") {
         displayTime();
-    } else {
+        saveFormat(format)
+    } else if(format === "false"){
         displayOtherTime();
+        saveFormat(format)
     }
 }
 
