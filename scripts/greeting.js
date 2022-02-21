@@ -59,4 +59,4 @@ reset.addEventListener('click', () => {
 
 printGreeting(greeting);
 isUser();
-setInterval(refreshGreeting(), 500);
+setInterval(refreshGreeting, 500);

@@ -9,10 +9,12 @@
 
     .clock-time {
         font-size: 10rem;
+        cursor: pointer;
     }
 
     .greeting {
         font-size: 2rem;
+        cursor: default;
     }
 
     .input {
@@ -20,6 +22,7 @@
         padding: 0 0.7rem;
         width: 10rem;
         margin-top: 1rem;
+        background-color: transparent;
 
         &::placeholder {
             color: black;
