@@ -6,6 +6,8 @@ let format = localStorage.getItem("format");
 if (format === null) {
     localStorage.setItem("format", isFormat);
     format = localStorage.getItem("format");
+} else {
+    setInterval(getFormat,1)
 }
 
 timeDisplay.addEventListener('click', () => {
@@ -57,4 +59,4 @@ function getFormat() {
     }
 }
 
-setInterval(getFormat,1)
+// setInterval(getFormat,1)

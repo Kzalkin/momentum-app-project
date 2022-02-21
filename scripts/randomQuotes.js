@@ -16,6 +16,8 @@ if (something === null) {
     localStorage.setItem("quotes", JSON.stringify(quotes));
     something = JSON.parse(localStorage.getItem("quotes"));
     displayQuote();
+} else {
+    displayQuote();
 }
 
 function displayQuote() {
@@ -40,4 +42,4 @@ quoteDisplay.addEventListener('click', () => {
     quoteFormContainer.classList.toggle("hide");
 })
 
-displayQuote();
+//displayQuote();
