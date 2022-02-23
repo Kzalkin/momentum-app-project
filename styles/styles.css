@@ -7,6 +7,17 @@
   background-position: center;
   background-size: cover;
 }
+.app-container .center {
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+}
+
+.play {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
 
 .header {
   padding: 0.5rem;
