@@ -28,6 +28,10 @@
 .links-container:active {
   background-color: #b3b3b3;
 }
+.links-container span {
+  font-size: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 .links-container .links {
   overflow: hidden;
   width: 8rem;
@@ -55,11 +59,17 @@
   padding: 0.5rem;
   cursor: default;
 }
+.date-container .day {
+  font-size: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 .date-container .date {
   position: absolute;
   right: 0.5rem;
   top: 2rem;
   padding: 1rem;
+  font-size: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .hide2 {
@@ -84,15 +94,16 @@
   cursor: default;
 }
 .time-greeting .input {
-  font-size: 1rem;
-  padding: 0 0.7rem;
-  width: 10rem;
+  font-size: 1.5rem;
+  padding: 0 1.5rem;
+  width: 15rem;
   margin-top: 1rem;
+  border-radius: 15px;
   background-color: transparent;
 }
 .time-greeting .input::placeholder {
   color: black;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .footer {
@@ -100,7 +111,7 @@
   padding: 5px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   position: fixed;
   bottom: 0;
 }
@@ -122,6 +133,7 @@
   background-color: transparent;
   transition: all 0.3s ease;
   border-radius: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .footer .todo-btn:hover {
   background-color: #cccccc;
@@ -135,7 +147,6 @@
   flex-direction: column;
   height: 8rem;
   width: 15rem;
-  margin-bottom: -10px;
   position: absolute;
   left: 0;
   right: 0;
@@ -173,6 +184,7 @@
 .footer .quotes {
   padding: 0.5rem;
   border-radius: 15px;
+  font-size: 1.5rem;
   transition: all 0.3s ease;
 }
 .footer .quotes:hover {
@@ -195,11 +207,12 @@
   right: 1rem;
   border-radius: 15px;
   overflow: hidden;
-  margin-bottom: -10px;
+  margin-bottom: -6px;
   transition: all 0.3s ease;
 }
 .footer .todo-container p {
   padding: 0.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .footer .todo-container .todo-list-container {
   display: flex;
@@ -210,6 +223,9 @@
   background-color: white;
   overflow: auto;
 }
+.footer .todo-container .todo-list-container::-webkit-scrollbar {
+  display: none;
+}
 .footer .todo-container .todo-list-container .todo-list {
   display: flex;
   justify-content: space-between;
@@ -219,8 +235,10 @@
   margin: 0;
   padding: 5px;
   cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .footer .todo-container .todo-list-container .todo-list i {
+  padding: 5px;
   cursor: pointer;
 }
 .footer .todo-container .todo-form {
@@ -229,6 +247,9 @@
 .footer .todo-container .todo-form .todo-input {
   padding: 0.5rem;
   border-radius: 15px;
+}
+.footer .todo-container .todo-form .todo-input::placeholder {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .hide {
@@ -253,10 +274,11 @@
 }
 .today-focus .focus {
   font-size: 1.5rem;
-  width: 19.5rem;
-  padding: 0 1rem;
+  width: 20rem;
+  padding: 0 2rem;
   margin-top: 1rem;
   background-color: transparent;
+  border-radius: 15px;
 }
 .today-focus .focus::placeholder {
   color: black;
@@ -272,6 +294,8 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

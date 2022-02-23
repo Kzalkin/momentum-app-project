@@ -41,5 +41,3 @@ quoteReset.addEventListener('click', ()=>{
 quoteDisplay.addEventListener('click', () => {
     quoteFormContainer.classList.toggle("hide");
 })
-
-//displayQuote();

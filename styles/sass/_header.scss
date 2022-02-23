@@ -18,6 +18,12 @@
     &:active {
         background-color: hsl(0, 0%, 70%);
     }
+
+    span {
+        font-size: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+
     .links {
         overflow: hidden;
         width: 8rem;
@@ -46,11 +52,19 @@
     padding: 0.5rem;
     cursor: default;
 
+
+    .day {
+        font-size: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
     .date {
         position:absolute;
         right: 0.5rem;
         top: 2rem;
         padding: 1rem;
+        font-size: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 }
 

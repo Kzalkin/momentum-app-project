@@ -48,7 +48,6 @@ function saveFormat(x) {
     localStorage.setItem("format", x)
 }
 
-
 function getFormat() {
     if (format === "true") {
         displayTime();
@@ -58,5 +57,3 @@ function getFormat() {
         saveFormat(format)
     }
 }
-
-// setInterval(getFormat,1)
